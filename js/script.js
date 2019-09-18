@@ -1,22 +1,21 @@
 function getMoveName(argMoveId){
-    if(argMoveId === 1) {
-      return 'kamień';
-    }
+  if (argMoveId === 1) {
+    return 'kamień';
+  }
 
-    if(argMoveId === 2) {
-        return 'papier';
-    }
+  if (argMoveId === 2) {
+      return 'papier';
+  }
 
-    if(argMoveId === 3) {
-        return 'nozyce';
-    } else {
-        printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-        return 'nieznany ruch';
-      }
+  if (argMoveId === 3) {
+      return 'nożyce';
+  } else {
+      printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+      return 'nieznany ruch';
+    }
 }
 
-  
-  
+
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
@@ -24,83 +23,68 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 let computerMove = getMoveName(randomNumber);
 
 /*if(randomNumber === 1) {
-  computerMove = 'kamień';
+computerMove = 'kamień';
+}
+if(randomNumber === 2) {
+  computerMove = 'papier';
 }
 
-if(randomNumber === 2) {
-    computerMove = 'papier';
-  }
-  
-  if(randomNumber === 3) {
-    computerMove = 'nożyce';
-  }*/
+if(randomNumber === 3) {
+  computerMove = 'nożyce';
+}*/
 
 printMessage('Mój ruch to: ' + computerMove);
 
-let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+let argPlayerMove = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
-console.log('Gracz wpisał: ' + playerInput);
+console.log('Gracz wpisał: ' + argPlayerMove);
 
-let playerMove = getMoveName(randomNumber);
+let argPlayerMove = displayResult(propmt);
 
-/*if(playerInput === '1') {
-  playerMove = 'kamień';
+function displayResult ( argComputerMove, argPlayerMove); {
+  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+
+  if ( argComputerMove === 'kamień' && argPlayerMove === 'papier') {
+    printMessage('Ty wygrywasz!');
+  } 
+
+  if ( argComputerMove === 'papier' && argPlayerMove === 'kamień') {
+      printMessage('Przegrywasz');
+    } 
+
+  if ( argComputerMove === 'kamień' && argPlayerMove === 'nożyce') {
+      printMessage('Przegrywasz');
+  } 
+
+  if ( argComputerMove === 'nożyce' && argPlayerMove === 'kamień) {
+      printMessage('Ty wygrywasz!');
+  } 
+
+  if ( argComputerMove === 'nożyce' && argPlayerMove === 'papier'){
+      printMessage('Przegrywasz');
+  } 
+
+  if ( argComputerMove === 'papier' && argPlayerMove === 'nożyce'){
+      printMessage('Ty wygrywasz!');
+  } 
+
+  if ( argComputerMove === 'kamień' && argPlayerMove === 'kamień'){
+      printMessage('Remis');
+  } 
+
+  if ( argComputerMove === 'papier' && argPlayerMove === 'papier'){
+      printMessage('Remis');
+  } 
+
+  if ( argComputerMove === 'nożyce' && argPlayerMove === 'nożyce'){
+      printMessage('Remis');
+  } else {
+      printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+      return 'nieznany ruch';
+    }
 }
 
-if(playerInput === '2') {
-    playerMove = 'papier';
-  }
-  
-  if(playerInput === '3') {
-    playerMove = 'nożyce';
-  }*/
 
-printMessage('Twój ruch to: ' + playerMove);
 
-if( computerMove === 'kamień' && playerMove === 'papier') {
-    printMessage('Ty wygrywasz!');
-  }
 
-if( computerMove === 'papier' && playerMove === 'kamień') {
-    printMessage('Przegrywasz');
- }
 
- if( computerMove === 'kamień' && playerMove === 'nożyce') {
-    printMessage('Przegrywasz');
-  }
-  
-  if( computerMove === 'nożyce' && playerMove === 'kamień') {
-    printMessage('Ty wygrywasz!');
-  }
-  
-  if( computerMove === 'nożyce' && playerMove === 'papier') {
-    printMessage('Przegrywasz');
-  }
-
-  if( computerMove === 'papier' && playerMove === 'nożyce') {
-    printMessage('Ty wygrywasz!');
-  }
-
-  if( computerMove === 'kamień' && playerMove === 'kamień') {
-    printMessage('Remis');
-  }
-
-  if( computerMove === 'papier' && playerMove === 'papier') {
-    printMessage('Remis');
-  }
-  
-  if( computerMove === 'nożyce' && playerMove === 'nożyce') {
-    printMessage('Remis');
-  }
-
-  if( computerMove === 'papier' && playerMove === 'nieznany ruch') {
-    printMessage('Wybierz cyfre 1, 2 lub 3');
-  }
-
-  if( computerMove === 'kamień' && playerMove === 'nieznany ruch') {
-    printMessage('Wybierz cyfre 1, 2 lub 3');
-  }
-
-  if( computerMove === 'nożyce' && playerMove === 'nieznany ruch') {
-    printMessage('Wybierz cyfre 1, 2 lub 3');
-  }
