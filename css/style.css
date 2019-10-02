@@ -4,16 +4,16 @@ body {
 
 h1 {
   text-align: center;
-  color: #ff0800;
+  color: color-one;
 }
 
 h3 {
   text-align: center;
-  color: #ff0800;
+  color: color-one;
 }
 
 .b-scissors {
-  color: #ff0800;
+  color: color-one;
   width: 30%;
   float: right;
   margin: 20px;
@@ -31,5 +31,10 @@ h3 {
   width: 30%;
   float: left;
   margin: 20px;
+}
+
+.info {
+  text-align: center;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */

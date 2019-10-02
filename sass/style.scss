@@ -1,4 +1,5 @@
-$ color-one:  color-one;
+//Valebles:
+$color-one:  rgb(255, 0, 0);
 
 body {
     background-image: url("https://wp-assets.futurism.com/2014/05/rock-paper-scissors.jpg");   
@@ -23,14 +24,19 @@ h3 {
 
 .b-rock {
     background: grey;
-    width:30%; 
-    float:center; 
-    margin:20px;
+    width: 30%; 
+    float: center; 
+    margin: 20px;
 }
 
 .b-paper {
     background: rgb(255, 255, 255);
-    width:30%; 
-    float:left; 
-    margin:20px;
+    width: 30%; 
+    float: left; 
+    margin: 20px;
+}
+
+.info {
+    text-align: center;
+    color: rgb(255, 0, 0);
 }
