@@ -1,19 +1,21 @@
 
 (function() {
-function playGame(argPlayerMove) {
-    clearMessages();
+const playGame = function(argPlayerMove) {
+    
 
-    function printMessage(msg){
+    const printMessage = function(msg){
         const div = document.createElement('div');
         div.innerHTML = msg;
         document.getElementById('messages').appendChild(div);
       }
     
-    function clearMessages(){
+    const clearMessages = function(){
         document.getElementById('messages').innerHTML = '';
       }
 
-    function getMoveName(argMoveId) {
+      clearMessages();
+
+    const getMoveName = function(argMoveId) {
         if (argMoveId === 1) {
           return 'kamień';
         }
@@ -51,9 +53,9 @@ function playGame(argPlayerMove) {
 
     console.log('Gracz wpisał: ' + argPlayerMove);*/
 
-    displayResult(computerMove, argPlayerMove);
+    
 
-    function displayResult ( argComputerMove, argPlayerMove) {
+    const displayResult = function( argComputerMove, argPlayerMove) {
       printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 
         if ((argComputerMove === 'kamień' && argPlayerMove === 'papier')
@@ -75,9 +77,11 @@ function playGame(argPlayerMove) {
             printMessage('Remis');
         } 
       }
+
+      displayResult(computerMove, argPlayerMove);
 }
 
-function buttonClickedPaper(){
+const buttonClickedPaper = function(){
     playGame('papier');
 }
 
@@ -85,7 +89,7 @@ function buttonClickedPaper(){
 
     testPaper.addEventListener('click', buttonClickedPaper);
 
-function buttonClickedRock(){
+const buttonClickedRock = function(){
     playGame('kamień');
 }
 
@@ -93,7 +97,7 @@ function buttonClickedRock(){
 
     testRock.addEventListener('click', buttonClickedRock);
 
-function buttonClickedScissors(){
+const buttonClickedScissors = function(){
     playGame('nożyce');
 }
 
