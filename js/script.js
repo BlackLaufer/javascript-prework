@@ -2,7 +2,6 @@
 (function() {
     const playGame = function(argPlayerMove) {
         
-
         const printMessage = function(msg) {
             const div = document.createElement('div');
             div.innerHTML = msg;
@@ -13,7 +12,7 @@
             document.getElementById('messages').innerHTML = '';
         }
 
-          clearMessages();
+        clearMessages();
 
         const getMoveName = function(argMoveId) {
             if (argMoveId === 1) {
@@ -48,7 +47,6 @@
                 printMessage('Przegrywasz');
               } 
 
-
             if (( argComputerMove === 'kamień' && argPlayerMove === 'kamień')
             || (argComputerMove === 'papier' && argPlayerMove === 'papier')
             || (argComputerMove === 'nożyce' && argPlayerMove === 'nożyce'))  {
@@ -63,20 +61,20 @@
         playGame('papier');
     }
 
-    let testPaper = document.getElementById('play-paper');
+    const testPaper = document.getElementById('play-paper');
     testPaper.addEventListener('click', buttonClickedPaper);
 
     const buttonClickedRock = function() {
         playGame('kamień');
     }
 
-    let testRock = document.getElementById('play-rock');
+    const testRock = document.getElementById('play-rock');
     testRock.addEventListener('click', buttonClickedRock);
 
     const buttonClickedScissors = function() {
         playGame('nożyce');
     }
 
-    let testScissors = document.getElementById('play-scissors');
+    const testScissors = document.getElementById('play-scissors');
     testScissors.addEventListener('click', buttonClickedScissors);
 })()
