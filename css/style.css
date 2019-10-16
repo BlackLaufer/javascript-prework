@@ -1,39 +1,40 @@
+$color-one: rgb(255, 0, 0);
 body {
-  background-image: url("https://wp-assets.futurism.com/2014/05/rock-paper-scissors.jpg");
+    background-image: url("https://wp-assets.futurism.com/2014/05/rock-paper-scissors.jpg");   
 }
 
 h1 {
-  text-align: center;
+    text-align: center;  
 }
 
 h3 {
-  text-align: center;
-  color: color-one;
+    text-align: center;
+    color: color-one;    
 }
 
 .b-scissors {
-  color: #f50707;
-  width: 30%;
-  float: right;
-  margin: 20px;
+    color: color-one;
+    width:30%; 
+    float:right; 
+    margin:20px;
 }
 
 .b-rock {
-  background: grey;
-  width: 30%;
-  float: center;
-  margin: 20px;
-}
-
-.b-paper {
-  background: white;
-  width: 30%;
-  float: left;
-  margin: 20px;
-}
+    background: rgb(128, 128, 128);
+    width: 30%;
+    float: center;
+    margin: 20px;
+  }
+  
+  .b-paper {
+    background: rgb(255, 255, 255);
+    width: 30%;
+    float: left;
+    margin: 20px;
+  }
 
 .info {
-  text-align: center;
-  color: red;
+    text-align: center;
+    color: color-one;
 }
 /*# sourceMappingURL=style.css.map */
