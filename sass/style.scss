@@ -1,3 +1,5 @@
+
+$color-one: rgb(255, 0, 0);
 body {
     background-image: url("https://wp-assets.futurism.com/2014/05/rock-paper-scissors.jpg");   
 }
@@ -12,27 +14,27 @@ h3 {
 }
 
 .b-scissors {
-    color: rgb(245, 7, 7);
+    color: color-one;
     width:30%; 
     float:right; 
     margin:20px;
 }
 
 .b-rock {
-    background: grey;
-    width: 30%; 
-    float: center; 
+    background: rgb(128, 128, 128);
+    width: 30%;
+    float: center;
     margin: 20px;
-}
-
-.b-paper {
+  }
+  
+  .b-paper {
     background: rgb(255, 255, 255);
-    width: 30%; 
-    float: left; 
+    width: 30%;
+    float: left;
     margin: 20px;
-}
+  }
 
 .info {
     text-align: center;
-    color: rgb(255, 0, 0);
+    color: color-one;
 }
