@@ -10,11 +10,11 @@ h1 {
 
 h3 {
     text-align: center;
-    color: color-one;    
+    color: $color-one;    
 }
 
 .b-scissors {
-    color: color-one;
+    color: $color-one;
     width:30%; 
     float:right; 
     margin:20px;
@@ -36,5 +36,5 @@ h3 {
 
 .info {
     text-align: center;
-    color: color-one;
+    color: $color-one;
 }
